@@ -41,3 +41,12 @@ class Test(unittest.TestCase):
         player.autoincrementarJug2()
         player.autoincrementarJug2()
         self.assertEquals('0-40', player.calcularPuntuacion())
+    def test_40_40(self): #Habríaque comprobarsi sirve para todos los casos
+        player = Player()
+        player.autoincrementarJug1()
+        player.autoincrementarJug1()
+        player.autoincrementarJug1()
+        player.autoincrementarJug2()
+        player.autoincrementarJug2()
+        player.autoincrementarJug2()
+        self.assertEquals('40-40', player.calcularPuntuacion())
