@@ -1,10 +1,10 @@
 import unittest
-from Partido import Partido
+from Player import Player
 
 
 class Test(unittest.TestCase):
 
      def test_inicial(self): #primero defino al jugador
-         player = Partido.Player()
-         self.assertEquals("0", player.getScore)
+         player= Player()
+         self.assertEquals("0", player.getScore())
 
