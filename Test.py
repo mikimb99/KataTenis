@@ -1,4 +1,6 @@
 import unittest
+
+import Player
 from Player import Player
 
 
@@ -9,4 +11,9 @@ class Test(unittest.TestCase):
         self.assertEquals("0", player.getScore())
     def test_jugador15(self):
         player= Player()
+        player.ganarPunto()
         self.assertEquals("15",player.getScore())
+    def test_jugador30(self):
+        Player.Player()
+        player.ganarPunto()
+        self.assertEquals("15", player.getScore())
