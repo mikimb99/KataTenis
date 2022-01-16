@@ -14,6 +14,7 @@ class Test(unittest.TestCase):
         player.ganarPunto()
         self.assertEquals("15",player.getScore())
     def test_jugador30(self):
-        Player.Player()
+        player= Player()
         player.ganarPunto()
-        self.assertEquals("15", player.getScore())
+        player.ganarPunto()
+        self.assertEquals("30", player.getScore())
